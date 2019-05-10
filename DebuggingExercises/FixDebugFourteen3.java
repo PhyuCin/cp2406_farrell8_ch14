@@ -6,9 +6,12 @@ public class FixDebugFourteen3 extends JFrame implements ItemListener
 {
    FlowLayout flow = new FlowLayout();
    JComboBox pizzaBox = new JComboBox();
+
    JLabel toppingList = new JLabel("Topping List");
    JLabel aLabel = new JLabel("Paulos's American Pie");
+
    JTextField totPrice = new JTextField(10);
+
    int[] pizzaPrice = {7, 10, 10, 8, 8, 8, 8};
    int totalPrice = 0;
    String output;
@@ -19,6 +22,7 @@ public class FixDebugFourteen3 extends JFrame implements ItemListener
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setLayout(flow);
       pizzaBox.addItemListener(this);
+
       add(toppingList);
       pizzaBox.addItem("cheese");
       pizzaBox.addItem("sausage");
