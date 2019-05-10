@@ -13,9 +13,9 @@ public class FixDebugFourteen4 extends JFrame implements ItemListener
 
    JCheckBox cola = new JCheckBox("Cola",false);
    JCheckBox lemon = new JCheckBox("Lemonade",false);
-   JCheckBox tea = new JCheckBox("Iced tea");
-   JCheckBox milk = new JCheckBox("Milk");
-   JCheckBox coffee = new JCheckBox("Coffee");
+   JCheckBox tea = new JCheckBox("Iced tea", false);
+   JCheckBox milk = new JCheckBox("Milk", false);
+   JCheckBox coffee = new JCheckBox("Coffee",false);
    JTextField totPrice = new JTextField(10);
 
    final int HIGH_PRICE = 3;
@@ -49,6 +49,7 @@ public class FixDebugFourteen4 extends JFrame implements ItemListener
       drinkGrp.add(tea);
       drinkGrp.add(milk);
       drinkGrp.add(coffee);
+
       totPrice.setText("0");
    }
    public static void main(String[] arguments)
