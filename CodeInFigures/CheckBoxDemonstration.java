@@ -15,6 +15,7 @@ public class CheckBoxDemonstration extends JFrame implements ItemListener
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setLayout(new FlowLayout());
       label.setFont(new Font("Arial", Font.ITALIC, 22));
+
       coffee.addItemListener(this);
       cola.addItemListener(this);
       milk.addItemListener(this);
